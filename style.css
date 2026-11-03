@@ -137,8 +137,33 @@ html, body {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   line-height: 1.45;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
   max-width: 420px;
+}
+
+/* Direct Phone Number Link */
+.profile-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 13px;
+}
+
+.profile-phone-link {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--color-text-subtitle);
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  padding: 2px 6px;
+}
+
+.profile-phone-link:hover,
+.profile-phone-link:focus-visible {
+  color: #381E05;
+  text-decoration: underline;
 }
 
 /* Elegant Golden Divider */
@@ -162,44 +187,6 @@ html, body {
   color: var(--color-gold-accent);
   font-size: 9px;
   line-height: 1;
-}
-
-/* Quick Access Call Action Button */
-.profile-quick-actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.quick-action-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-gold-subtle);
-  border: 1.5px solid rgba(197, 154, 82, 0.45);
-  color: var(--color-text-subtitle);
-  text-decoration: none;
-  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 3px 8px rgba(92, 53, 11, 0.1);
-}
-
-.quick-action-link:hover {
-  transform: translateY(-2px) scale(1.08);
-  box-shadow: 0 6px 18px rgba(92, 53, 11, 0.2);
-}
-
-.quick-action-link.call-link:hover {
-  background: #22C55E;
-  color: #FFFFFF;
-  border-color: #22C55E;
-}
-
-.quick-action-link:active {
-  transform: translateY(0) scale(0.96);
 }
 
 /* --------------------------------------------------------------------------
@@ -364,6 +351,10 @@ html, body {
     padding: 0 4px;
   }
 
+  .profile-phone-link {
+    font-size: 14px;
+  }
+
   .links-section {
     max-width: 100%;
     gap: 12px;
@@ -410,6 +401,10 @@ html, body {
 
   .profile-subtitle {
     font-size: 12.5px;
+  }
+
+  .profile-phone-link {
+    font-size: 13.5px;
   }
 
   .link-button {
